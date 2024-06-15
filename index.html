@@ -1,42 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta content="stuff, to, help, search, engines, not" name="keywords">
-<meta content="What this page is about." name="description">
-<meta content="Display Webcam Stream" name="title">
-<title>Display Webcam Stream</title>
-  
-<style>
-#container {
-    margin: 0px auto;
-    width: 500px;
-    height: 375px;
-    border: 10px #333 solid;
-}
-#videoElement {
-    width: 500px;
-    height: 375px;
-    background-color: #666;
-}
-#canvas {
-    background-color: #666;
-    width: 500px;
-    height: 375px;
-}
-</style>
+  <title>Realtime communication with WebRTC</title>
+  <link rel="stylesheet" href="css/main.css" />
 </head>
-  
 <body>
-    <video autoplay="true" id="videoElement"></video>
-    <canvas id="canvas" onclick= canvasOnclick() width="500" height="375"></canvas>
-    <br>
-    <!--Both WEBCAM and RECORDING works!-->
-    <button id="action" onclick="handleAction()">Start recording...</button>
+  <!-- <h1>Realtime communication with WebRTC</h1> -->
 
-    <p id="status"></p>
-<script src="index.js">
-
-</script>
+  <video autoplay playsinline></video>
+  <script src="js/main.js"></script>
 </body>
 </html>
